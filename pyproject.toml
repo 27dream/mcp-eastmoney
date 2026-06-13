@@ -1,0 +1,42 @@
+[project]
+name = "mcp-eastmoney"
+version = "0.1.0"
+description = "MCP server for Eastmoney (东方财富) — A-share real-time quotes, fund flows, sector data, and K-lines for Claude Code, Cursor, and any MCP client"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "mcp-eastmoney contributors" }
+]
+keywords = ["mcp", "model-context-protocol", "eastmoney", "a-share", "stock", "finance", "claude", "cursor", "trading", "中国股市"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USER/mcp-eastmoney"
+Issues = "https://github.com/YOUR_USER/mcp-eastmoney/issues"
+Repository = "https://github.com/YOUR_USER/mcp-eastmoney"
+
+[project.scripts]
+mcp-eastmoney = "mcp_eastmoney.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_eastmoney"]
