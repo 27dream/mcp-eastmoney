@@ -27,9 +27,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USER/mcp-eastmoney"
-Issues = "https://github.com/YOUR_USER/mcp-eastmoney/issues"
-Repository = "https://github.com/YOUR_USER/mcp-eastmoney"
+Homepage = "https://github.com/27dream/mcp-eastmoney"
+Issues = "https://github.com/27dream/mcp-eastmoney/issues"
+Repository = "https://github.com/27dream/mcp-eastmoney"
 
 [project.scripts]
 mcp-eastmoney = "mcp_eastmoney.server:main"

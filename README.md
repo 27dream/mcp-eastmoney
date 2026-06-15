@@ -8,6 +8,12 @@
 
 [English](#english) | [中文](#中文)
 
+<p align="center">
+  <img src="assets/demo.png" alt="Claude × mcp-eastmoney 演示" width="780">
+  <br>
+  <sub>👆 在 Claude Desktop 中直接用自然语言查询 A 股行情和主力资金</sub>
+</p>
+
 ---
 
 ## 中文
@@ -63,6 +69,8 @@ mcp-eastmoney
 ```
 
 重启 Claude Desktop，即可看到 5 个新工具。
+
+> 📚 **完整集成教程**：[`examples/CLAUDE_DESKTOP.md`](examples/CLAUDE_DESKTOP.md) — 含故障排查 + 50+ 实战 prompts ([sample_prompts.md](examples/sample_prompts.md))
 
 #### 4. 接入 Cursor
 

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "eastmoney": {
+      "command": "uvx",
+      "args": ["mcp-eastmoney"]
+    }
+  }
+}
