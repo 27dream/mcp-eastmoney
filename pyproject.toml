@@ -1,6 +1,6 @@
 [project]
 name = "mcp-eastmoney"
-version = "0.1.0"
+version = "0.2.0"
 description = "MCP server for Eastmoney (东方财富) — A-share real-time quotes, fund flows, sector data, and K-lines for Claude Code, Cursor, and any MCP client"
 readme = "README.md"
 license = { text = "MIT" }

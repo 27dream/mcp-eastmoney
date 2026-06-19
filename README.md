@@ -24,7 +24,7 @@
 
 - 🆓 **完全免费** — 使用东方财富公开延时接口（`push2delay.eastmoney.com`），无需 API Key
 - 🇨🇳 **中文金融场景** — 全 A 股市场覆盖（沪深京），返回结构化中文字段
-- ⚡ **5 个核心 Tool** — 实时行情、股票搜索、主力资金排名、板块资金流、历史 K 线
+- ⚡ **10 个核心 Tool** — 新增北向资金、涨停池、技术指标、港股/美股
 - 🔌 **标准 MCP 协议** — 兼容 Claude Desktop / Cursor / Cline / Continue 等所有 MCP 客户端
 - 🐍 **Python + uv** — `uvx mcp-eastmoney` 一键运行
 
@@ -37,6 +37,11 @@
 | `main_fund_rank` | 主力资金净流入排名（超大单/大单/中单/小单） | `main_fund_rank(market="all", limit=10)` |
 | `sector_fund_flow` | 行业/概念板块资金流向 + 领涨股 | `sector_fund_flow(kind="industry", limit=10)` |
 | `get_kline` | 历史 K 线（日/周/月线，前复权） | `get_kline(code="600519", period="daily", count=30)` |
+| `north_bound_flow` | **🆕 北向资金** — 北上资金每日买入/卖出/净额 | `north_bound_flow(days=5)` |
+| `limit_up_pool` | **🆕 涨停板池** — 连板数/封板时间/封板资金/炸板次数 | `limit_up_pool(limit=50)` |
+| `technical_indicators` | **🆕 技术指标** — MA5/10/20/30/60 + MACD + KDJ | `technical_indicators(code="300750")` |
+| `hk_us_quote` | **🆕 港股/美股实时行情** — 腾讯/苹果/特斯拉 | `hk_us_quote(code="00700", market="hk")` |
+| `hk_us_kline` | **🆕 港股/美股K线** — 日/周/月/分钟级 | `hk_us_kline(code="AAPL", market="us")` |
 
 ### 🚀 快速开始
 
@@ -132,10 +137,11 @@ mcp-eastmoney
 ### 🤝 贡献
 
 欢迎 PR！计划中的功能：
-- [ ] 资金日历、龙虎榜
-- [ ] 财务报表数据
-- [ ] 北向资金 / 港股 / 美股
-- [ ] 技术指标计算（MA/MACD/KDJ）
+- [ ] 财务报表数据（利润表、资产负债表、现金流量表）
+- [ ] 资金日历（新股日历、分红日历）
+- [ ] 龙虎榜席位数据
+- [ ] 可转债数据
+- [ ] 指数成分股列表
 
 ### 📜 License
 
@@ -164,6 +170,11 @@ MIT
 | `main_fund_rank` | Main capital net inflow ranking (super-large / large / medium / small orders) |
 | `sector_fund_flow` | Industry / concept sector capital flow with leading stocks |
 | `get_kline` | Historical OHLCV (daily / weekly / monthly, forward-adjusted) |
+| `north_bound_flow` | **🆕** North-bound capital flow via Stock Connect |
+| `limit_up_pool` | **🆕** Daily limit-up stocks — board count, seal time, seal fund |
+| `technical_indicators` | **🆕** MA5/10/20/30/60 + MACD + KDJ indicators |
+| `hk_us_quote` | **🆕** Hong Kong / US stock real-time quote |
+| `hk_us_kline` | **🆕** Hong Kong / US stock K-line data |
 
 ### 🚀 Quick Start
 
