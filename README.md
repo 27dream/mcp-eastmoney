@@ -142,6 +142,7 @@ mcp-eastmoney
 - [ ] 龙虎榜席位数据
 - [ ] 可转债数据
 - [ ] 指数成分股列表
+- [ ] PyPI 自动发布流水线（GitHub Actions）
 
 ### 📜 License
 
